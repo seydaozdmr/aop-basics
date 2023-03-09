@@ -15,10 +15,12 @@ public class AopExample {
         Greeter hello = new Hello();
 
 
-        runTarget(greeter);
+        //runTarget(greeter);
 
         runBeforeAdvice(hello);
+        System.out.println("********");
         runAfterAdvice(greeter);
+        System.out.println("********");
         runAroundAdvice(hello);
     }
 
